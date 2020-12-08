@@ -15,7 +15,8 @@ fetch(url).then(resposta => {
                 <img src="coin.jpg" class="align-self-center mr-3" alt="coin" width="100" height="60">
                 <div class="media-body">
                     <h5 class="mt-2">${moeda.name}</h5>
-                    <p>${moeda.symbol}</p>
+                    <p class="mb-0">${moeda.symbol}</p>
+                    <p>${new Date(moeda.first_historical_data).toLocaleString()}</p>
                 </div>
             </div>
             `;
